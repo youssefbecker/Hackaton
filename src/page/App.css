@@ -117,6 +117,18 @@ body, html {margin: 0;
     margin-left: 60px;
     }
 
+    .Auth-message {
+      padding: 20px;
+      background-color:  #2C739E;
+      color: white;
+      border-radius: 20px;
+      font-size: 1.2em;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: -750px;
+      margin-left: 60px;
+      }
+
 .top-bar {
   width: 100%;
   background-color: #2c739e;
@@ -152,17 +164,17 @@ h1.Home-message {
 
 @media (max-width: 768px) {
   .top-bar {
-    flex-direction: column; /* Passer à une disposition en colonne sur les petits écrans */
-    justify-content: center; /* Centrer verticalement les éléments */
-    text-align: center; /* Centrer le texte horizontalement */
+    flex-direction: column; 
+    justify-content: center; 
+    text-align: center; 
   }
 
   .top-bar-text {
-    font-size: 25px; /* Réduire la taille du texte sur les petits écrans */
+    font-size: 25px; 
   }
 
   .content {
-    padding: 10px; /* Réduire l'espacement du contenu sur les petits écrans */
+    padding: 10px; 
     margin-left: 10px;
   }
 }

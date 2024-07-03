@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Importer useHistory depuis react-router-dom
-import logo from './Logo.png'; // Assurez-vous d'importer le chemin correct du logo
+import logo from './Successful authentication.png'; // Assurez-vous d'importer le chemin correct du logo
 import './App.css'; // Assurez-vous que le chemin est correct
 
 export function Auth() {
