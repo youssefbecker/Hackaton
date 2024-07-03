@@ -9,10 +9,16 @@ export function Auth() {
                 <span className="top-bar-text">eLock</span>
             </div>
             <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <div className="App-message">
-                    Scanner votre carte pour vous connecter
+                <div className="content">
+                    <img src={logo} className="App-logo" alt="logo" />
+                    <div className="auth-message">
+                        <h1 className="Home-message"> <p>Bienvenue</p> <p>dans votre espace utilisateur</p> </h1>
+                    </div>
+                    <div className="Success-message">
+                        Authentification effectuée avec succès!
+                    </div>
                 </div>
+                
             </header>
         </div>
     );
