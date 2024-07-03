@@ -127,7 +127,7 @@ body, html {
   font-size: 1.2em;
 }
 .Success-message2 {
-  padding: 20px;
+  padding: 10px;
   background-color: #2C739E;
   color: white;
   border-radius: 20px;
@@ -152,9 +152,6 @@ h1 {
 }
 
 .back-button {
-  position: absolute;
-  top: 10px;
-  left: 10px;
   background-color: #2C739E;
   color: white;
   padding: 10px 20px;
@@ -162,6 +159,8 @@ h1 {
   cursor: pointer;
   font-size: 1em;
   border-radius: 5px;
+  margin-top: 40px;
+  margin-left:-1300px ;
 }
 
 .back-button:hover {
@@ -188,6 +187,12 @@ h1 {
     height: 40vmin; /* Réduire la taille du logo sur les petits écrans */
     margin: 20px 0; /* Centrer le logo horizontalement et ajouter un espacement vertical */
   }
+
+  .App-logo-success {
+    height:40vmin;
+    margin: 20px 0; /* Centrer le logo horizontalement et ajouter un espacement vertical */
+  }
+
 
   .auth-message h1 {
     font-size: 2rem; /* Réduire la taille du texte sur les petits écrans */
