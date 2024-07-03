@@ -7,7 +7,7 @@ export function Auth() {
     const navigate = useNavigate();
 
     const handleBack = () => {
-        navigate('/'); // Rediriger vers la page d'accueil
+        navigate('/'); // 
     };
 
     return (

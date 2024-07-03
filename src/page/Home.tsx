@@ -12,7 +12,7 @@ export function Home() {
                 <div className="content">
                     <img src={logo} className="App-logo" alt="logo" />
                     <div className="auth-message">
-                        <h1 className="Home-message"> <p>Bienvenue</p> <p>dans votre espace utilisateur</p> </h1>
+                        <h1 className="Home-message">Bienvenue</h1>
                     </div>
                     <div className="Auth-message">
                         Scanner votre carte pour vous authentifier !

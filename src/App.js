@@ -2,6 +2,7 @@ import { RouterProvider } from "react-router-dom";
 import { createBrowserRouter } from "react-router-dom";
 import { Home } from "./page/Home.tsx";
 import { Auth } from "./page/Auth.tsx";
+import { Failed } from "./page/Failed.tsx";
 
 export function App() {
   const router = createBrowserRouter([
@@ -14,8 +15,8 @@ export function App() {
       element: <Auth />,
     },
     {
-      path: "*",
-      element: <div>404</div>,
+      path: "/failed",
+      element: <Failed />,
     },
   ]);
 
