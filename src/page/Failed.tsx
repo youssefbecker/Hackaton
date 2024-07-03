@@ -10,7 +10,8 @@ export function Failed() {
             </div>
             <header className="App-header">
                 <div className="content">
-                    <img src={logo} className="App-logo1" alt="logo" />
+                    <img src={logo} className="App-logo_failed" alt="logo" />
+                   
                     <div className="Failed-message">
                         Authentification échouée !
                     </div>
