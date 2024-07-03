@@ -1,13 +1,22 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Importer useHistory depuis react-router-dom
 import logo from './Logo.png'; // Assurez-vous d'importer le chemin correct du logo
 import './App.css'; // Assurez-vous que le chemin est correct
 
 export function Auth() {
+    const navigate = useNavigate();
+
+    const handleBack = () => {
+        navigate('/'); // Rediriger vers la page d'accueil
+    };
+
     return (
         <div className="App">
             <div className="top-bar">
                 <span className="top-bar-text">eLock</span>
             </div>
+            <button className="back-button" onClick={handleBack}>Retour</button>
+
             <header className="App-header">
                 <div className="content">
                     <img src={logo} className="App-logo" alt="logo" />
