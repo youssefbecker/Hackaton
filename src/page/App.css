@@ -1,6 +1,7 @@
-.App {
-  text-align: center;
-  background-color: #d3d3d3; 
+body, html {margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', serif;
 }
 
 
@@ -17,6 +18,10 @@
 .top-bar-text {
   font-size: 35px;
   font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', serif;  
+  background: linear-gradient(to bottom, #91DDFD 0%, #85BCD5 52%, #7A9EAE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .App-logo {
@@ -50,21 +55,75 @@
 
 .App {
   text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #fff;
 }
-
 
 
 .App-logo {
-  height: 40vmin;
+  height: 600px;
   pointer-events: none;
+  margin-bottom: 20px; 
+  margin-right: 30px;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.auth-message {
+  margin-top: -220px;
+  text-align: left;
+}
+
+
 .App-message {
-  background-color: #2C739E;
   padding: 20px;
-  border-radius: 5px;
+  background: linear-gradient(to bottom, #8EDDFF 0%, #84C2DC 42%, #769DAD 68%, #769DAD 100%);
   color: white;
-  margin-top: 80px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  /* margin-top: 40px; */
+  font-size: 1.2em;
   
 }
 
+.top-bar {
+  width: 100%;
+  background-color: #2c739e;
+  color: white;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-size: 3rem; 
+  color: black;
+  font-family: poppins;
+  font-size: 90px;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column; /* Passer à une disposition en colonne sur les petits écrans */
+    justify-content: center; /* Centrer verticalement les éléments */
+    text-align: center; /* Centrer le texte horizontalement */
+  }
+
+  .top-bar-text {
+    font-size: 25px; /* Réduire la taille du texte sur les petits écrans */
+  }
+
+  .content {
+    padding: 10px; /* Réduire l'espacement du contenu sur les petits écrans */
+  }
+}
